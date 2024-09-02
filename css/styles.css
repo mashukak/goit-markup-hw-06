@@ -189,7 +189,7 @@ ul {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    min-height: 640px;
+    min-height: 640px ;
 }
 
 .menu-close {
@@ -596,9 +596,20 @@ margin-bottom: 96px;
     transform: translate(0);
 }
 
+.portfolio-list h3 {
+    font-size: 18px;
+    color: rgba(46, 47, 66, 1);
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+}
+
 .footer-block {
     background-color: #2e2f42;
-    align-content: flex-start;
+    /* align-content: flex-start; */
+    margin-right: auto;
+    margin-left: auto;
     padding-top: 100px;
     padding-bottom: 100px;
 }
@@ -613,15 +624,6 @@ margin-bottom: 96px;
     
 }
 
-.portfolio-list h3 {
-    font-size: 18px;
-    color: rgba(46, 47, 66, 1);
-    font-weight: 500;
-    font-size: 20px;
-    line-height: 1.2;
-    letter-spacing: 0.02em;
-}
-
 .social-media-footer{
     color: WHITE;
     font-weight: 500;
@@ -634,10 +636,12 @@ margin-bottom: 96px;
 }
 
 .footer-block-items{
-    /* display: flex; */
-    /* align-items: baseline      */
-    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    /* align-items: baseline ;    */
+    /* align-items: center; */
         justify-content: center;
+        align-items: center;
 }
 
 .list-benefits-footer{
@@ -670,11 +674,11 @@ margin-bottom: 96px;
 }
 
 .footer-box {
-    margin-right: 120px;
+    /* margin-right: 120px; */
 }
 
 .footer-benefits-block {
-    margin-right: 80px;
+    /* margin-right: 80px; */
 }
 
 
@@ -685,6 +689,7 @@ margin-bottom: 96px;
     letter-spacing: 0.02em;
     margin-bottom: 16px;
     font-weight: 500;
+    align-items: center;
 }
 
 .form-footer {
@@ -1141,5 +1146,8 @@ margin-bottom: 188px;
     
         .contact-list {
             display: flex;
+        }
+        .footer-box{
+            margin-right: 120px;
         }
 }
