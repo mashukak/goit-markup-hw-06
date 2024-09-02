@@ -21,7 +21,7 @@
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
-    <!--   <header class="header-class">
+    <header class="header-class">
       <div class="container header-container">
         <nav class="nav-menu">
           <a href="/index.html" class="logo"
@@ -47,8 +47,75 @@
             </li>
           </ul>
         </address>
+        <button type="button" class="menu-open">
+          <svg width="24" height="24">
+            <use href="./images/icons.svg#menu-icons"></use>
+          </svg>
+        </button>
       </div>
-    </header> -->
+      <div class="menu-modal is-open">
+        <div>
+          <button class="menu-close">
+            <svg width="8" height="8">
+              <use href="./images/icons.svg#icon-close"></use>
+            </svg>
+          </button>
+          <nav class="mob-nav-menu">
+            <ul class="mob-nav-list">
+              <li>
+                <a href="./index.html" class="mob-nav-button-studio">Studio</a>
+              </li>
+              <li><a href="" class="mob-nav-button">Portfolio</a></li>
+              <li><a href="" class="mob-contacts-button">Contacts</a></li>
+            </ul>
+          </nav>
+          <address class="mob-address-class">
+            <ul class="mob-contact-list">
+              <li>
+                <a href="mailto:info@devstudio.com" class="mob-contact-link"
+                  >+11 (000) 111-11-11</a
+                >
+              </li>
+              <li>
+                <a href="tel:+110001111111" class="mob-contact-link-tel"
+                  >info@devstudio.com</a
+                >
+              </li>
+            </ul>
+          </address>
+          <ul class="mob-ul-list-benefits">
+            <li class="list-benefits">
+              <a href="" class="icons-adress-raw">
+                <svg class="social-media-icons" width="24" height="24">
+                  <use href="./images/icons.svg#icon-instagram"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="list-benefits">
+              <a href="" class="icons-adress-raw">
+                <svg class="social-media-icons" width="24" height="24">
+                  <use href="./images/icons.svg#icon-twitter"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="list-benefits">
+              <a href="" class="icons-adress-raw">
+                <svg class="social-media-icons" width="24" height="24">
+                  <use href="./images/icons.svg#icon-facebook"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="list-benefits">
+              <a href="" class="icons-adress-raw">
+                <svg class="social-media-icons" width="24" height="24">
+                  <use href="./images/icons.svg#icon-linkedin2"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </header>
 
     <main>
       <section class="main-page">
@@ -205,7 +272,6 @@
             </li>
             <li class="foto-block">
               <img
-                srcset="./images/img 3 2x.jpg 2x"
                 class="img"
                 src="./images/img_3.jpg"
                 alt="Camila Garcia"
@@ -299,8 +365,24 @@
           <ul class="portfolio-list">
             <li class="li-portfolio-list">
               <div class="block-card">
+                <picture>
+                  <source
+                    srcset="
+                      ./images/img1_mob.jpg   1x,
+                      ./images/img1_mob2x.jpg 2x
+                    "
+                    media="(max-width: 767px)"
+                  />
+                  <source
+                    srcset="./images/img1_tab.jpg 1x, ./images/img_tab2x.jpg 2x"
+                    media="(min-width: 768px)"
+                  />
+                  <source
+                    srcset="./images/img1.jpg 1x, ./images/img12x.jpg 2x"
+                    media="(min-width: 1158px)"
+                  />
+                </picture>
                 <img
-                  srcset="./images/img 1_2.jpg 2px"
                   class="img1"
                   src="./images/img1.jpg"
                   alt="Cashless Payment"
@@ -319,8 +401,26 @@
             </li>
             <li class="li-portfolio-list">
               <div class="block-card">
+                <picture>
+                  <source
+                    srcset="
+                      ./images/img2_mob.jpg   1x,
+                      ./images/img2_mob2x.jpg 2x
+                    "
+                    media="(min-width: 767px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/img2_tab.jpg   1x,
+                      ./images/img1_tab2x.jpg 2x
+                    "
+                    media="(min-width: 768px)"
+                  />
+                  <source
+                    srcset="./images/img2.jpg 1x, ./images/img22x.jpg 2x"
+                  />
+                </picture>
                 <img
-                  srcset="./images/img 2_2.jpg 2px"
                   class="img2"
                   src="./images/img2.jpg"
                   alt="Cashless Payment"
@@ -339,8 +439,27 @@
             </li>
             <li class="li-portfolio-list">
               <div class="block-card">
+                <picture>
+                  <source
+                    srcset="
+                      ./images/img3_mob.jpg   1x,
+                      ./images/img3_mob2x.jpg 2x
+                    "
+                    media="(min-width: 767px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/img3_tab.jpg   1x,
+                      ./images/img2_tab2x.jpg 2x
+                    "
+                    media="(min-width: 768px)"
+                  />
+                  <source
+                    srcset="./images/img3.jpg 1x, ./images/img32x.jpg 2x"
+                    media="(min-width: 1158px)"
+                  />
+                </picture>
                 <img
-                  srcset="./images/img 3_2.jpg 2px"
                   class="img3"
                   src="./images/img3.jpg"
                   alt="Cashless Payment"
@@ -359,8 +478,27 @@
             </li>
             <li class="li-portfolio-list">
               <div class="block-card">
+                <picture>
+                  <source
+                    srcset="
+                      ./images/img4_mob.jpg   1x,
+                      ./images/img4_mob2x.jpg 2x
+                    "
+                    media="(min-width: 767px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/img4_tab.jpg   1x,
+                      ./images/img3_tab2x.jpg 2x
+                    "
+                    media="(min-width: 768px)"
+                  />
+                  <source
+                    srcset="./images/img4.jpg 1x, ./images/img42x.jpg 2x"
+                    media="(min-width: 1158px)"
+                  />
+                </picture>
                 <img
-                  srcset="./images/img 4_2.jpg 2px"
                   class="img4"
                   src="./images/img4.jpg"
                   alt="Cashless Payment"
@@ -379,8 +517,27 @@
             </li>
             <li class="li-portfolio-list">
               <div class="block-card">
+                <picture>
+                  <source
+                    srcset="
+                      ./images/img5_mob.jpg   1x,
+                      ./images/img5_mob2x.jpg 2x
+                    "
+                    media="(min-width: 767px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/img5_tab.jpg   1x,
+                      ./images/img4_tab2x.jpg 2x
+                    "
+                    media="(min-width: 768px)"
+                  />
+                  <source
+                    srcset="./images/img5.jpg 1x, ./images/img52x.jpg 2x"
+                    media="(min-width: 1158px)"
+                  />
+                </picture>
                 <img
-                  srcset="./images/img 5_2.jpg 2px"
                   class="img5"
                   src="./images/img5.jpg"
                   alt="Cashless Payment"
@@ -399,8 +556,27 @@
             </li>
             <li class="li-portfolio-list">
               <div class="block-card">
+                <picture>
+                  <source
+                    srcset="
+                      ./images/img6_mob.jpg   1x,
+                      ./images/img6_mob2x.jpg 2x
+                    "
+                    media="(min-width: 767px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/img6_tab.jpg   1x,
+                      ./images/img5_tab2x.jpg 2x
+                    "
+                    media="(min-width: 768px)"
+                  />
+                  <source
+                    srcset="./images/img6.jpg 1x, ./images/img62x.jpg 2x"
+                    media="(min-width: 1158px)"
+                  />
+                </picture>
                 <img
-                  srcset="./images/img 6_2.jpg 2px"
                   class="img6"
                   src="./images/img6.jpg"
                   alt="Cashless Payment"
