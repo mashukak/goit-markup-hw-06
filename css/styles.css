@@ -1,6 +1,7 @@
 img, .img2{
     display: block;
     width: 100%;
+    height: auto;
 }
 
 *,
@@ -27,7 +28,7 @@ main {
         0px 1px 6px rgba(46, 47, 66, 0.08);;
 }
 .container {
-    /* padding: 0 15px; */
+    padding: 0 15px;
     margin: 0 auto; 
     /* width: 1158px; */
     max-width: 320px;
@@ -165,7 +166,7 @@ ul {
 
 .main-page {
     text-align: center;
-    background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/BG.jpg);
+    background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/BG\ mobil.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -174,16 +175,32 @@ ul {
     margin: auto;
 }
 
+@media  screen and (-webkit-min-device-pixel-ratio: 2),
+ (min-resolution: 2dppx),
+  (min-resolution: 192dpi) {
+    .main-page{
+        background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/BG\ mobil\ 2x.jpg);
+        
+    }
+}
+
 .main-title {
-    font-size: 56px;
-    line-height: 1.07;
+    /* font-size: 56px */
+    font-size: 36px;
+    line-height: 40px;
+    /* line-height: 1.07; */
     letter-spacing: 0.02em;
     color: #ffffff;
     text-align: center;
     margin-right: auto;
     margin-left: auto;
-    max-width: 496px;
-    padding-top: 188px;
+    /* max-width: 496px; */
+    /* padding-top: 188px; */
+    padding-top: 72px;
+    font-weight: 700;
+    padding-left: 52px;
+    padding-right: 52px;
+    font-family: Roboto;
 }
 
 .main-button {
@@ -201,14 +218,18 @@ ul {
     border: none;
     margin-right: auto;
     margin-left: auto;
-    margin-top: 48px;
+    /* margin-top: 48px; */
+    margin-top: 72px;
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    margin-bottom: 188px;
+    /* margin-bottom: 188px */
+    margin-bottom: 72px;
 }
 
 .block-service {
-    padding-top: 120px;
-    padding-bottom: 120px;
+    /* padding-top: 120px;
+    padding-bottom: 120px; */
+margin-bottom: 96px;
+    margin-top: 96px;
 }
 
 .block-service-div {
@@ -276,8 +297,9 @@ ul {
     letter-spacing: 0.02em;
     line-height: 1.5;
     font-family: Roboto;
-    margin-bottom: 72px;
+    padding-bottom: 72px;
     color: rgba(67, 68, 85, 1);
+    
 }
 
 .block-service p {
@@ -287,7 +309,8 @@ ul {
 
 .block-team {
     background-color: #F4F4FD;
-    padding-bottom: 120px;
+    /* padding-bottom: 120px; */
+    padding-bottom: 96px;
     padding-top: 120px;
 }
 
@@ -428,7 +451,6 @@ ul {
     flex-wrap: wrap;
     column-gap: 24px;
     row-gap: 48px;
-    width: 100%;
 }
 
 .block-card {
@@ -483,6 +505,7 @@ ul {
     letter-spacing: 0.02em;
     max-width: 264px;
     margin-top: 16px;
+    
 }
 
 .portfolio-list h3 {
@@ -501,11 +524,15 @@ ul {
     line-height: 24px;
     letter-spacing: 0.02em;
     margin-bottom: 16px;
+    align-items: center;
+    justify-content: center;
 }
 
 .footer-block-items{
-    display: flex;
-    align-items: baseline;
+    /* display: flex; */
+    /* align-items: baseline      */
+    align-items: center;
+        justify-content: center;
 }
 
 .list-benefits-footer{
@@ -556,7 +583,7 @@ ul {
 }
 
 .form-footer {
-    display: flex;
+    /* display: flex; */
     gap: 24px;
 }
 
@@ -875,6 +902,23 @@ input:checked + .privacy-text > .custom-checkbox{
     padding-left: 16px;
     padding-right: 16px;
   }   
+  .main-page{
+    background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/BG\ Tablet.jpg);
+  }
+ .main-button{
+    margin-bottom: 112px;
+    margin-top: 36px;
+ }
+ .main-title{
+font-size: 56px;
+line-height: 1.07;
+padding-top: 118px;
+padding-left: 0;
+    padding-right: 0;
+ }
+ .main-page > .container {
+    max-width: 552px;;
+ }
 
   .li-list-strategy {
     width: calc((100% - 24px) / 2);
@@ -894,21 +938,47 @@ input:checked + .privacy-text > .custom-checkbox{
     display: flex;
     
 }
-.foto-block {
-    width: calc((100% - 24px) / 2);
-}
 .portfolio-list{
     display: flex;
-    width: calc((100% - 24px)  / 2);
+    width: calc((100% - 24px) / 2);
+    flex-direction: row;
+    justify-content: space-between;
+    row-gap: 72px;
 }
 .container-option {
     margin-bottom: 72px;
+}
+.list > .container{
+    max-width: 552px;
+}
+@media screen and (-webkit-min-device-pixel-ratio: 2),
+(min-resolution: 2dppx),
+(min-resolution: 192dpi) {
+    .main-page {
+        background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/BG\ tablet\ 2x.jpg);
+
+    }
 }
 }
 
 @media screen and (min-width: 1158px) {
     .container {
         max-width: 1158px;
+    }
+    .main-page{
+        background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/BG.jpg);
+    }
+    .main-title{
+    font-size: 56px;
+    line-height: 1.07;
+    padding-top: 188px;
+    }
+    .main-button{
+margin-top: 48px;
+margin-bottom: 188px;
+    }
+    .list>.container {
+            max-width: 1158px;
     }
     .container-benefits{
         display: flex;
@@ -933,7 +1003,17 @@ input:checked + .privacy-text > .custom-checkbox{
         text-align: start;
         font-size: 20px;
     }
+    .portfolio-list{
+        width: calc((100% - 24px) / 3);
+    }
     .foto-block {
         width: calc((100% - 72px) / 4);
+    }
+    @media screen and (-webkit-min-device-pixel-ratio: 2),
+    (min-resolution: 2dppx),
+    (min-resolution: 192dpi) {
+        .main-page {
+            background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/BG\ 2x.jpg);
+        }
     }
 }
