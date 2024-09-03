@@ -75,6 +75,8 @@ ul {
     color: #4d5ae5;
     font-family: "Raleway", sans-serif;
     text-decoration: none;
+    align-items: center;
+    justify-content: center;
 }
 
 .address-class {
@@ -621,7 +623,7 @@ margin-bottom: 96px;
     letter-spacing: 0.02em;
     max-width: 264px;
     margin-top: 16px;
-    
+    margin-bottom: 72px;
 }
 
 .social-media-footer{
@@ -648,6 +650,7 @@ margin-bottom: 96px;
     display: flex;
     list-style: none;
     gap: 16px;
+    margin-bottom: 72px;
 }
 
 .border-benefits-footer {
@@ -1080,7 +1083,7 @@ padding-left: 0;
 .menu-open {
     display: none;
 }
-.menu-modal {
+.menu-modal.is-open {
     display: none;
 }
 }
