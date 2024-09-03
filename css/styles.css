@@ -45,9 +45,7 @@ main {
     align-content: stretch;
     width: 1158px;
     /* margin: 16px 16px 16px; */
-    padding-left: 15px;
-    padding-right: 15px;
-    padding: 0 15px;
+    padding: 16px;
     display: flex;
 }
 
@@ -62,12 +60,12 @@ ul {
 }
 
 .logo {
-    /* margin-right: 76px; */
-       
+    margin-right: 76px;
 }
 
 .logo-footer {
     margin: 0 auto;
+    padding-bottom: 16px;
 }
 
 .logo,
@@ -280,6 +278,7 @@ color: rgba(46, 47, 66, 1);
     height: 100%;
     margin: auto;
     padding-bottom: 72px;
+    padding-top: 72px;
 }
 
 @media  screen and (-webkit-min-device-pixel-ratio: 2),
@@ -293,6 +292,7 @@ color: rgba(46, 47, 66, 1);
 
 .main-title {
     /* font-size: 56px */
+
     font-size: 36px;
     line-height: 40px;
     /* line-height: 1.07; */
@@ -302,10 +302,10 @@ color: rgba(46, 47, 66, 1);
     margin-right: auto;
     margin-left: auto;
     /* max-width: 496px; */
+    max-width: 216px;
     /* padding-top: 188px; */
-    padding-top: 72px;
     font-weight: 700;
-    padding-bottom: 72px;
+    margin-bottom: 72px;
     font-family: Roboto;
 }
 
@@ -632,7 +632,6 @@ color: rgba(46, 47, 66, 1);
     letter-spacing: 0.02em;
     max-width: 264px;
     margin-top: 16px;
-    margin-bottom: 72px;
 }
 
 .social-media-footer{
@@ -797,7 +796,8 @@ p {
     position: absolute;
     left: 50%;
     top: 50%;
-    width: 408px;
+    width: 288px;
+    /* width: 408px; */
     min-height: 584px;
     transform: translate(-50% , -50%);
     border-radius: 4px;
@@ -1028,18 +1028,15 @@ input:checked + .privacy-text > .custom-checkbox{
     padding-right: 16px;
   }   
   .main-page{
+    padding-top: 112px;
+    padding-bottom: 112px;
     background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/BG\ Tablet.jpg);
   }
- .main-button{
-    margin-bottom: 112px;
-    margin-top: 36px;
- }
  .main-title{
-font-size: 56px;
-line-height: 1.07;
-padding-top: 118px;
-padding-left: 0;
-    padding-right: 0;
+    font-size: 56px;
+    line-height: 1.07;
+    max-width: 496px;
+    margin-bottom: 36px;
  }
  .main-page > .container {
     max-width: 552px;;
@@ -1062,6 +1059,7 @@ padding-left: 0;
   }
 .list {
     display: flex;
+    gap: 24px;
     
 }
 .portfolio-list{
@@ -1087,7 +1085,6 @@ padding-left: 0;
 (min-resolution: 192dpi) {
     .main-page {
         background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/BG\ tablet\ 2x.jpg);
-
     }
 }
 
@@ -1110,7 +1107,24 @@ padding-left: 0;
     
 }
 .footer-block-items{
-    gap: 24px;
+    justify-content:stretch;
+    gap: 72px 24px;
+    align-items: normal;
+}
+.modal {
+    width: 408px;
+}
+.subscribe-button{
+    margin: 0;
+}
+.container .footer-block-items{
+    width: 584px;
+}
+.text-footer{
+    margin: 0 ;
+}
+.nav-list {
+    padding-left: 120px;
 }
 }
 
@@ -1120,18 +1134,24 @@ padding-left: 0;
     }
     .contact-list{
         flex-direction: row;
+        gap: 40px;
+        padding-right: 156px;
     }
+        .logo {
+            padding-left: 140px;
+        }
     .main-page{
+        padding-bottom: 188px;
+        padding-top: 188px;
         background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/BG.jpg);
     }
     .main-title{
     font-size: 56px;
     line-height: 1.07;
-    padding-top: 188px;
+    padding-bottom: 48px;
     }
     .main-button{
-margin-top: 48px;
-margin-bottom: 188px;
+margin-top: 0;
     }
     .list>.container {
             max-width: 1158px;
@@ -1191,15 +1211,26 @@ margin-bottom: 188px;
             align-content: flex-start;
         }
         .footer-block-items{ 
-        align-items: center;
         gap: 0px;
         }
     .footer-box {
         margin-right: 120px
     }
-        .footer-benefits-block{
-            margin-right: 80px;
-            
-        }
-
+.nav-list{
+    padding-left: 76px;
+}
+.block-team{
+    padding-bottom: 120px;
+}
+.block-service{
+    padding-top: 120px;
+    padding-bottom: 120px;
+}
+.block-portfolio{
+    padding-top: 120px;
+    padding-bottom: 120px;
+}
+.container-option{
+    margin: 0;
+}
 }
