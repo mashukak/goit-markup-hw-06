@@ -1137,9 +1137,7 @@ input:checked + .privacy-text > .custom-checkbox{
         gap: 40px;
         padding-right: 156px;
     }
-        .logo {
-            padding-left: 140px;
-        }
+
     .main-page{
         padding-bottom: 188px;
         padding-top: 188px;
